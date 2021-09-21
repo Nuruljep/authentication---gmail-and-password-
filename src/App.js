@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { initializeApp } from 'firebase/app';
+import firebaseConfig from './Firebase.Config';
+initializeApp(firebaseConfig);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut amet obcaecati harum nesciunt laboriosam nostrum repudiandae aliquam laborum debitis asperiores earum, nihil at aliquid dolor, accusamus eius molestiae ipsum sapiente?</p>
+      <form action="">
+        <input type="email" name="" id="" />
+        <input type="password" name="" id="" />
+        <input type="submit" value="" />
+      </form>
     </div>
   );
 }
